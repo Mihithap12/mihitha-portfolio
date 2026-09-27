@@ -1,0 +1,220 @@
+/* ==================================================
+   ABOUT SECTION
+================================================== */
+
+.about-section {
+  width: min(1280px, calc(100% - 40px));
+
+  margin: 0 auto;
+
+  padding: 120px 0;
+}
+
+
+/* ==================================================
+   LABEL
+================================================== */
+
+.about-label {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 30px;
+
+  color: #a8afc1;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+
+.about-label span {
+  width: 8px;
+
+  height: 8px;
+
+  border-radius: 50%;
+
+  background: #8b5cf6;
+
+  box-shadow:
+    0 0 12px rgba(139, 92, 246, 0.8);
+}
+
+
+/* ==================================================
+   MAIN LAYOUT
+================================================== */
+
+.about-layout {
+  display: grid;
+
+  grid-template-columns:
+    0.75fr 1.35fr;
+
+  gap: 90px;
+
+  align-items: start;
+}
+
+
+/* ==================================================
+   LEFT HEADING
+================================================== */
+
+.about-heading h2 {
+  margin: 0;
+
+  color: #f0f1f7;
+
+  font-size: clamp(3rem, 5vw, 4rem);
+
+  line-height: 1.05;
+
+  letter-spacing: -0.05em;
+
+  font-weight: 700;
+}
+
+
+/* ==================================================
+   RIGHT CONTENT
+================================================== */
+
+.about-content {
+  padding-top: 5px;
+}
+
+
+.about-content > p {
+  margin: 0 0 24px;
+
+  color: #aab2c5;
+
+  font-size: 18px;
+
+  line-height: 1.75;
+}
+
+
+/* ==================================================
+   DIVIDER
+================================================== */
+
+.about-divider {
+  height: 1px;
+
+  margin: 42px 0 28px;
+
+  background:
+    rgba(255, 255, 255, 0.08);
+}
+
+
+/* ==================================================
+   CURRENT DIRECTION
+================================================== */
+
+.about-direction-title {
+  margin-bottom: 24px;
+
+  color: #8992a8;
+
+  font-family: monospace;
+
+  font-size: 12px;
+
+  letter-spacing: 2px;
+}
+
+
+/* ==================================================
+   FOCUS GRID
+================================================== */
+
+.about-focus-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 30px;
+}
+
+
+.about-focus h4 {
+  margin: 0 0 8px;
+
+  color: #cbd0dc;
+
+  font-family: monospace;
+
+  font-size: 11px;
+
+  letter-spacing: 1px;
+}
+
+
+.about-focus p {
+  margin: 0;
+
+  color: #aeb6c9;
+
+  font-size: 16px;
+
+  line-height: 1.5;
+}
+
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media (max-width: 900px) {
+
+  .about-layout {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+
+  .about-heading h2 {
+    font-size: 3.2rem;
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .about-section {
+    width: calc(100% - 30px);
+
+    padding: 80px 0;
+  }
+
+
+  .about-heading h2 {
+    font-size: 2.7rem;
+  }
+
+
+  .about-content > p {
+    font-size: 16px;
+  }
+
+
+  .about-focus-grid {
+    grid-template-columns: 1fr;
+
+    gap: 24px;
+  }
+
+}

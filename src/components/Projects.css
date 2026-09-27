@@ -1,0 +1,527 @@
+/* ==================================================
+   PROJECTS SECTION
+================================================== */
+
+.projects-section {
+  width: min(1280px, calc(100% - 40px));
+
+  margin: 0 auto;
+
+  padding: 120px 0;
+}
+
+
+/* ==================================================
+   HEADER
+================================================== */
+
+.projects-header {
+  margin-bottom: 48px;
+}
+
+.projects-label {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 22px;
+
+  color: #a8afc1;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+.projects-label span {
+  width: 8px;
+
+  height: 8px;
+
+  border-radius: 50%;
+
+  background: #8b5cf6;
+
+  box-shadow:
+    0 0 12px rgba(139, 92, 246, 0.8);
+}
+
+
+.projects-header h2 {
+  margin: 0;
+
+  color: #f2f3f8;
+
+  font-size: clamp(3rem, 5vw, 4rem);
+
+  line-height: 1;
+
+  letter-spacing: -0.05em;
+}
+
+
+.projects-header p {
+  max-width: 800px;
+
+  margin-top: 24px;
+
+  color: #9da5b8;
+
+  font-size: 18px;
+
+  line-height: 1.6;
+}
+
+
+/* ==================================================
+   PROJECT GRID
+================================================== */
+
+.projects-grid {
+  display: grid;
+
+  grid-template-columns:
+    1.35fr 0.95fr;
+
+  gap: 24px;
+
+  align-items: stretch;
+}
+
+
+/* ==================================================
+   PROJECT CARD
+================================================== */
+
+.project-card {
+  overflow: hidden;
+
+  display: flex;
+
+  flex-direction: column;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(24, 27, 42, 0.95),
+      rgba(15, 18, 29, 0.95)
+    );
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 24px;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+
+  border-color:
+    rgba(139, 92, 246, 0.3);
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.3);
+}
+
+
+/* ==================================================
+   PROJECT VISUAL
+================================================== */
+
+.project-visual {
+  height: 185px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 15px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+/* subtle grid */
+
+.project-visual::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.035) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.035) 1px,
+      transparent 1px
+    );
+
+  background-size: 32px 32px;
+
+  pointer-events: none;
+}
+
+
+/* GreenChain visual */
+
+.greenchain-visual {
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(108, 75, 35, 0.25),
+      transparent 60%
+    ),
+    #171716;
+}
+
+
+/* Library visual */
+
+.library-visual {
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(37, 112, 80, 0.25),
+      transparent 60%
+    ),
+    #101b18;
+}
+
+
+/* Visual icon */
+
+.project-visual-icon {
+  position: relative;
+
+  z-index: 1;
+
+  font-size: 40px;
+
+  line-height: 1;
+}
+
+
+/* Visual title */
+
+.project-visual-title {
+  position: relative;
+
+  z-index: 1;
+
+  color: #9ca3af;
+
+  font-family: monospace;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+
+/* ==================================================
+   PROJECT CONTENT
+================================================== */
+
+.project-content {
+  padding: 32px;
+}
+
+
+/* ==================================================
+   TITLE ROW
+================================================== */
+
+.project-title-row {
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+
+.project-title-row h3 {
+  margin: 0;
+
+  color: #edf0f7;
+
+  font-size: 25px;
+
+  line-height: 1.2;
+
+  letter-spacing: -0.03em;
+}
+
+
+/* ==================================================
+   STATUS
+================================================== */
+
+.project-status {
+  flex-shrink: 0;
+
+  padding: 8px 12px;
+
+  border-radius: 20px;
+
+  font-family: monospace;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+
+.project-status.completed {
+  color: #a8c6a6;
+
+  border: 1px solid rgba(110, 150, 100, 0.35);
+
+  background: rgba(110, 150, 100, 0.05);
+}
+
+
+.project-status.progress {
+  color: #d5ad68;
+
+  border: 1px solid rgba(190, 145, 65, 0.35);
+
+  background: rgba(190, 145, 65, 0.05);
+}
+
+
+/* ==================================================
+   DESCRIPTION
+================================================== */
+
+.project-description {
+  margin-top: 24px;
+
+  color: #aeb5c7;
+
+  font-size: 16px;
+
+  line-height: 1.75;
+}
+
+
+/* ==================================================
+   WHAT I BUILT
+================================================== */
+
+.project-subtitle {
+  margin-top: 24px;
+
+  color: #c2c8d7;
+
+  font-family: monospace;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+
+.project-details {
+  margin-top: 10px;
+
+  color: #aeb5c7;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+}
+
+
+/* ==================================================
+   TECHNOLOGY TAGS
+================================================== */
+
+.project-tech {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: 22px;
+}
+
+
+.project-tech span {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  padding: 8px 12px;
+
+  border: 1px solid rgba(180, 140, 65, 0.35);
+
+  border-radius: 8px;
+
+  color: #c6a45d;
+
+  font-family: monospace;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+
+  transition: 0.25s ease;
+}
+
+
+.project-tech span svg {
+  font-size: 14px;
+}
+
+
+.project-tech span:hover {
+  color: #e5c67c;
+
+  border-color:
+    rgba(220, 170, 70, 0.6);
+
+  transform: translateY(-2px);
+}
+
+
+/* ==================================================
+   GITHUB BUTTON
+================================================== */
+
+.project-github {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  width: 100%;
+
+  margin-top: 22px;
+
+  padding: 14px 20px;
+
+  border-radius: 30px;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  color: #adb5c8;
+
+  text-decoration: none;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+
+.project-github:hover {
+  color: white;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  border-color:
+    rgba(255, 255, 255, 0.15);
+
+  transform: translateY(-2px);
+}
+
+
+.project-progress-button {
+  margin-top: 22px;
+}
+
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media (max-width: 950px) {
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .projects-section {
+    width: calc(100% - 30px);
+
+    padding: 80px 0;
+  }
+
+
+  .projects-header h2 {
+    font-size: 2.7rem;
+  }
+
+
+  .projects-header p {
+    font-size: 16px;
+  }
+
+
+  .project-content {
+    padding: 25px;
+  }
+
+
+  .project-title-row {
+    flex-direction: column;
+  }
+
+
+  .project-title-row h3 {
+    font-size: 22px;
+  }
+
+
+  .project-status {
+    align-self: flex-start;
+  }
+
+}

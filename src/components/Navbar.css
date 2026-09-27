@@ -1,0 +1,149 @@
+.navbar {
+  position: fixed;
+
+  top: 24px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: min(1000px, calc(100% - 40px));
+
+  height: 68px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 8px 14px 8px 30px;
+
+  background: rgba(14, 17, 30, 0.78);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 40px;
+
+  backdrop-filter: blur(20px);
+
+  z-index: 1000;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+  font-size: 29px;
+
+  font-family: Georgia, serif;
+
+  font-style: italic;
+
+  color: #667eea;
+
+  white-space: nowrap;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.nav-links {
+  display: flex;
+
+  align-items: center;
+
+  gap: 3px;
+}
+
+.nav-links a {
+  color: #9da5b8;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  padding: 12px 14px;
+
+  border-radius: 30px;
+
+  transition: all 0.25s ease;
+}
+
+.nav-links a:hover {
+  color: white;
+
+  background: rgba(255, 255, 255, 0.06);
+}
+
+
+/* ACTIVE HOME */
+
+.nav-links a.active {
+  color: #eef0f7;
+
+  background: rgba(255, 255, 255, 0.09);
+}
+
+
+/* =========================
+   THEME BUTTON
+========================= */
+
+.theme-button {
+  width: 42px;
+
+  height: 42px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  background: rgba(255, 255, 255, 0.04);
+
+  color: #aeb6c9;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.theme-button:hover {
+  color: white;
+
+  background: rgba(255, 255, 255, 0.1);
+
+  transform: rotate(20deg);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+  .navbar {
+    width: calc(100% - 24px);
+
+    padding-left: 20px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+}

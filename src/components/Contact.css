@@ -1,0 +1,465 @@
+/* ==================================================
+   CONTACT SECTION
+================================================== */
+
+.contact-section {
+  width: min(1280px, calc(100% - 40px));
+
+  margin: 0 auto;
+
+  padding: 120px 0;
+}
+
+
+/* ==================================================
+   LABEL
+================================================== */
+
+.contact-label {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: #a8afc1;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 24px;
+}
+
+
+.contact-label span {
+  width: 8px;
+
+  height: 8px;
+
+  border-radius: 50%;
+
+  background: #8b5cf6;
+
+  box-shadow:
+    0 0 12px rgba(139, 92, 246, 0.8);
+}
+
+
+/* ==================================================
+   HEADER
+================================================== */
+
+.contact-header {
+  text-align: center;
+
+  margin-bottom: 60px;
+}
+
+
+.contact-header h2 {
+  margin: 0;
+
+  color: #eef0f8;
+
+  font-size: clamp(3rem, 5vw, 4rem);
+
+  line-height: 1.05;
+
+  letter-spacing: -0.05em;
+}
+
+
+.contact-header p {
+  max-width: 850px;
+
+  margin: 16px auto 0;
+
+  color: #a7afc2;
+
+  font-size: 18px;
+
+  line-height: 1.6;
+}
+
+
+/* ==================================================
+   CONTACT GRID
+================================================== */
+
+.contact-grid {
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap: 24px;
+
+  align-items: stretch;
+}
+
+
+/* ==================================================
+   CARDS
+================================================== */
+
+.contact-info-card,
+.contact-form-card {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(24, 27, 42, 0.95),
+      rgba(17, 20, 31, 0.95)
+    );
+
+  border: 1px solid
+    rgba(255, 255, 255, 0.08);
+
+  border-radius: 24px;
+}
+
+
+/* ==================================================
+   LEFT CARD
+================================================== */
+
+.contact-info-card {
+  padding: 32px;
+}
+
+
+/* ==================================================
+   CONTACT ITEM
+================================================== */
+
+.contact-item {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 25px;
+
+  padding: 22px 0;
+
+  border-bottom: 1px solid
+    rgba(255, 255, 255, 0.07);
+}
+
+
+.contact-item:first-child {
+  padding-top: 5px;
+}
+
+
+.contact-item-label {
+  color: #858da2;
+
+  font-family: monospace;
+
+  font-size: 12px;
+
+  letter-spacing: 2px;
+}
+
+
+.contact-item-value {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  color: #d4d8e4;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition: 0.25s ease;
+}
+
+
+a.contact-item-value:hover {
+  color: #9b8cff;
+}
+
+
+.contact-item-value svg {
+  font-size: 13px;
+
+  opacity: 0.7;
+}
+
+
+/* ==================================================
+   RESUME BUTTON
+================================================== */
+
+.resume-button {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  width: 100%;
+
+  margin-top: 28px;
+
+  padding: 17px 20px;
+
+  border-radius: 30px;
+
+  background:
+    rgba(255, 255, 255, 0.04);
+
+  border: 1px solid
+    rgba(255, 255, 255, 0.1);
+
+  color: #d8dce7;
+
+  text-decoration: none;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+
+.resume-button:hover {
+  background:
+    rgba(139, 92, 246, 0.1);
+
+  border-color:
+    rgba(139, 92, 246, 0.35);
+
+  transform: translateY(-2px);
+}
+
+
+/* ==================================================
+   FORM CARD
+================================================== */
+
+.contact-form-card {
+  padding: 32px;
+}
+
+
+.contact-form-card form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 22px;
+}
+
+
+/* ==================================================
+   FORM GROUP
+================================================== */
+
+.form-group {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 9px;
+}
+
+
+.form-group label {
+  color: #858da2;
+
+  font-family: monospace;
+
+  font-size: 12px;
+
+  letter-spacing: 2px;
+}
+
+
+/* ==================================================
+   INPUTS
+================================================== */
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 17px 20px;
+
+  border-radius: 15px;
+
+  border: 1px solid
+    rgba(255, 255, 255, 0.08);
+
+  background:
+    rgba(255, 255, 255, 0.04);
+
+  color: #eef0f8;
+
+  font-family: inherit;
+
+  font-size: 16px;
+
+  outline: none;
+
+  transition:
+    border-color 0.25s ease,
+    background 0.25s ease;
+}
+
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #586176;
+}
+
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color:
+    rgba(139, 92, 246, 0.5);
+
+  background:
+    rgba(139, 92, 246, 0.04);
+}
+
+
+.form-group textarea {
+  resize: vertical;
+
+  min-height: 145px;
+}
+
+
+/* ==================================================
+   SEND BUTTON
+================================================== */
+
+.send-button {
+  width: fit-content;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  padding: 16px 30px;
+
+  margin-top: 2px;
+
+  border: none;
+
+  border-radius: 30px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #7c5cff,
+      #08b8df
+    );
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 12px 30px
+    rgba(84, 91, 255, 0.25);
+
+  transition: 0.3s ease;
+}
+
+
+.send-button:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 16px 35px
+    rgba(84, 91, 255, 0.35);
+}
+
+
+.send-button span {
+  font-size: 20px;
+}
+
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media (max-width: 850px) {
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .contact-section {
+    width: calc(100% - 30px);
+
+    padding: 80px 0;
+  }
+
+
+  .contact-header h2 {
+    font-size: 2.7rem;
+  }
+
+
+  .contact-header p {
+    font-size: 16px;
+  }
+
+
+  .contact-info-card,
+  .contact-form-card {
+    padding: 25px;
+  }
+
+
+  .contact-item {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 10px;
+  }
+
+
+  .contact-item-value {
+    font-size: 14px;
+  }
+
+
+  .send-button {
+    width: 100%;
+
+    justify-content: center;
+  }
+
+}
